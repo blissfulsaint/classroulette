@@ -1,0 +1,13 @@
+// COMMAND TO COMPILE SASS (FROM ROOT DIRECTORY): sass src/sass/style.scss src/css/style.css -w
+
+@import "composition/reset";
+@import "composition/typography";
+@import "composition/theme";
+@import "block/header";
+@import "block/nav";
+@import "block/footer";
+@import "block/main";
+@import "utility/animations";
+@import "exception/exception.scss";
+@import "block/form.scss";
+@import "block/body.scss";
