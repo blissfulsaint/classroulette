@@ -1,7 +1,7 @@
 // change inside of the function later
 // pass is placholder for selecting students
 function onButtonClick() {
-    pass;
+    // pass;
 }
   
 // click button
