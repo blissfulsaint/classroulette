@@ -1,0 +1,175 @@
+{
+    "students": [
+        {
+            "fname": "Joseph",
+            "lname": "Allen",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Josue",
+            "lname": "Avila",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Kaleb",
+            "lname": "Bradford",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Indy", 
+            "lname": "Brown",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Jessica",
+            "lname": "Clark",
+            "profilepic": "...."
+            
+        },
+        {
+            "fname": "Jon",
+            "lname": "Connell",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Mark",
+            "lname": "Cuizon",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Jared",
+            "lname": "Davey",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Tad",
+            "lname": "Decker",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Lauren",
+            "lname": "Dulgarian",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Jeremiah",
+            "lname": "Franco",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Gavin",
+            "lname": "Hart",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Jacob",
+            "lname": "Holst",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Jaelee",
+            "lname": "Jeong",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Christopher",
+            "lname": "Jones",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Christopher",
+            "lname": "Larson",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Brandon",
+            "lname": "Lisonbee",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Matt",
+            "lname": "McGrath",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Braxton",
+            "lname": "Medeiros",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Obe",
+            "lname": "Megargel",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Jade",
+            "lname": "Miller",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Emily",
+            "lname": "Raventos",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Mo",
+            "lname": "Ray",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Allen",
+            "lname": "Rutledge",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Matthew",
+            "lname": "Scoresby",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Carter",
+            "lname": "Solberg",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Natalie",
+            "lname": "Tesam",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Max",
+            "lname": "Tippetts",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Joseph",
+            "lname": "Turgoose",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Matthew",
+            "lname": "Twede",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Bryant",
+            "lname": "Van Orden",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Matias",
+            "lname": "Villar",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Christian",
+            "lname": "Winert",
+            "profilepic": "...."
+        },
+        {
+            "fname": "Tyler",
+            "lname": "Wright",
+            "profilepic": "...."
+        }
+    ]
+}
