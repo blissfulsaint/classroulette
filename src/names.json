@@ -1,106 +1,175 @@
 {
     "students": [
         {
-            "name": "Joseph Allen"
+            "fname": "Joseph",
+            "lname": "Allen",
+            "profilepic": "...."
         },
         {
-            "name": "Josue Avila"
+            "fname": "Josue",
+            "lname": "Avila",
+            "profilepic": "...."
         },
         {
-            "name": "Kaleb Bradford"
+            "fname": "Kaleb",
+            "lname": "Bradford",
+            "profilepic": "...."
         },
         {
-            "name": "Indy Brown"
+            "fname": "Indy", 
+            "lname": "Brown",
+            "profilepic": "...."
         },
         {
-            "name": "Jessica Clark"
+            "fname": "Jessica",
+            "lname": "Clark",
+            "profilepic": "...."
+            
         },
         {
-            "name": "Jon Connell"
+            "fname": "Jon",
+            "lname": "Connell",
+            "profilepic": "...."
         },
         {
-            "name": "Mark Cuizon"
+            "fname": "Mark",
+            "lname": "Cuizon",
+            "profilepic": "...."
         },
         {
-            "name": "Jared Davey"
+            "fname": "Jared",
+            "lname": "Davey",
+            "profilepic": "...."
         },
         {
-            "name": "Tad Decker"
+            "fname": "Tad",
+            "lname": "Decker",
+            "profilepic": "...."
         },
         {
-            "name": "Lauren Dulgarian"
+            "fname": "Lauren",
+            "lname": "Dulgarian",
+            "profilepic": "...."
         },
         {
-            "name": "Jeremiah Franco"
+            "fname": "Jeremiah",
+            "lname": "Franco",
+            "profilepic": "...."
         },
         {
-            "name": "Gavin Hart"
+            "fname": "Gavin",
+            "lname": "Hart",
+            "profilepic": "...."
         },
         {
-            "name": "Jacob Holst"
+            "fname": "Jacob",
+            "lname": "Holst",
+            "profilepic": "...."
         },
         {
-            "name": "Jaelee Jeong"
+            "fname": "Jaelee",
+            "lname": "Jeong",
+            "profilepic": "...."
         },
         {
-            "name": "Christopher Jones"
+            "fname": "Christopher",
+            "lname": "Jones",
+            "profilepic": "...."
         },
         {
-            "name": "Christopher Larson"
+            "fname": "Christopher",
+            "lname": "Larson",
+            "profilepic": "...."
         },
         {
-            "name": "Brandon Lisonbee"
+            "fname": "Brandon",
+            "lname": "Lisonbee",
+            "profilepic": "...."
         },
         {
-            "name": "Matt McGrath"
+            "fname": "Matt",
+            "lname": "McGrath",
+            "profilepic": "...."
         },
         {
-            "name": "Braxton Medeiros"
+            "fname": "Braxton",
+            "lname": "Medeiros",
+            "profilepic": "...."
         },
         {
-            "name": "Obe Megargel"
+            "fname": "Obe",
+            "lname": "Megargel",
+            "profilepic": "...."
         },
         {
-            "name": "Jade Miller"
+            "fname": "Jade",
+            "lname": "Miller",
+            "profilepic": "...."
         },
         {
-            "name": "Emily Raventos"
+            "fname": "Emily",
+            "lname": "Raventos",
+            "profilepic": "...."
         },
         {
-            "name": "Mo Ray"
+            "fname": "Mo",
+            "lname": "Ray",
+            "profilepic": "...."
         },
         {
-            "name": "Allen Rutledge"
+            "fname": "Allen",
+            "lname": "Rutledge",
+            "profilepic": "...."
         },
         {
-            "name": "Matthew Scoresby"
+            "fname": "Matthew",
+            "lname": "Scoresby",
+            "profilepic": "...."
         },
         {
-            "name": "Carter Solberg"
+            "fname": "Carter",
+            "lname": "Solberg",
+            "profilepic": "...."
         },
         {
-            "name": "Natalie Tesam"
+            "fname": "Natalie",
+            "lname": "Tesam",
+            "profilepic": "...."
         },
         {
-            "name": "Max Tippetts"
+            "fname": "Max",
+            "lname": "Tippetts",
+            "profilepic": "...."
         },
         {
-            "name": "Joseph Turgoose"
+            "fname": "Joseph",
+            "lname": "Turgoose",
+            "profilepic": "...."
         },
         {
-            "name": "Matthew Twede"
+            "fname": "Matthew",
+            "lname": "Twede",
+            "profilepic": "...."
         },
         {
-            "name": "Bryant Van Orden"
+            "fname": "Bryant",
+            "lname": "Van Orden",
+            "profilepic": "...."
         },
         {
-            "name": "Matias Villar"
+            "fname": "Matias",
+            "lname": "Villar",
+            "profilepic": "...."
         },
         {
-            "name": "Christian Winert"
+            "fname": "Christian",
+            "lname": "Winert",
+            "profilepic": "...."
         },
         {
-            "name": "Tyler Wright"
+            "fname": "Tyler",
+            "lname": "Wright",
+            "profilepic": "...."
         }
     ]
 }
