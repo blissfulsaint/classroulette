@@ -1,106 +1,141 @@
 {
     "students": [
         {
-            "name": "Joseph Allen"
+            "fname": "Joseph",
+            "lname": "Allen"
         },
         {
-            "name": "Josue Avila"
+            "fname": "Josue",
+            "lname": "Avila"
         },
         {
-            "name": "Kaleb Bradford"
+            "fname": "Kaleb",
+            "lname": "Bradford"
         },
         {
-            "name": "Indy Brown"
+            "fname": "Indy", 
+            "lname": "Brown"
         },
         {
-            "name": "Jessica Clark"
+            "fname": "Jessica",
+            "lname": "Clark"
+            
         },
         {
-            "name": "Jon Connell"
+            "fname": "Jon",
+            "lname": "Connell"
         },
         {
-            "name": "Mark Cuizon"
+            "fname": "Mark",
+            "lname": "Cuizon"
         },
         {
-            "name": "Jared Davey"
+            "fname": "Jared",
+            "lname": "Davey"
         },
         {
-            "name": "Tad Decker"
+            "fname": "Tad",
+            "lname": "Decker"
         },
         {
-            "name": "Lauren Dulgarian"
+            "fname": "Lauren",
+            "lname": "Dulgarian"
         },
         {
-            "name": "Jeremiah Franco"
+            "fname": "Jeremiah",
+            "lname": "Franco"
         },
         {
-            "name": "Gavin Hart"
+            "fname": "Gavin",
+            "lname": "Hart"
         },
         {
-            "name": "Jacob Holst"
+            "fname": "Jacob",
+            "lname": "Holst"
         },
         {
-            "name": "Jaelee Jeong"
+            "fname": "Jaelee",
+            "lname": "Jeong"
         },
         {
-            "name": "Christopher Jones"
+            "fname": "Christopher",
+            "lname": "Jones"
         },
         {
-            "name": "Christopher Larson"
+            "fname": "Christopher",
+            "lname": "Larson"
         },
         {
-            "name": "Brandon Lisonbee"
+            "fname": "Brandon",
+            "lname": "Lisonbee"
         },
         {
-            "name": "Matt McGrath"
+            "fname": "Matt",
+            "lname": "McGrath"
         },
         {
-            "name": "Braxton Medeiros"
+            "fname": "Braxton",
+            "lname": "Medeiros"
         },
         {
-            "name": "Obe Megargel"
+            "fname": "Obe",
+            "lname": "Megargel"
         },
         {
-            "name": "Jade Miller"
+            "fname": "Jade",
+            "lname": "Miller"
         },
         {
-            "name": "Emily Raventos"
+            "fname": "Emily",
+            "lname": "Raventos"
         },
         {
-            "name": "Mo Ray"
+            "fname": "Mo",
+            "lname": "Ray"
         },
         {
-            "name": "Allen Rutledge"
+            "fname": "Allen",
+            "lname": "Rutledge"
         },
         {
-            "name": "Matthew Scoresby"
+            "fname": "Matthew",
+            "lname": "Scoresby"
         },
         {
-            "name": "Carter Solberg"
+            "fname": "Carter",
+            "lname": "Solberg"
         },
         {
-            "name": "Natalie Tesam"
+            "fname": "Natalie",
+            "lname": "Tesam"
         },
         {
-            "name": "Max Tippetts"
+            "fname": "Max",
+            "lname": "Tippetts"
         },
         {
-            "name": "Joseph Turgoose"
+            "fname": "Joseph",
+            "lname": "Turgoose"
         },
         {
-            "name": "Matthew Twede"
+            "fname": "Matthew",
+            "lname": "Twede"
         },
         {
-            "name": "Bryant Van Orden"
+            "fname": "Bryant",
+            "lname": "Van Orden"
         },
         {
-            "name": "Matias Villar"
+            "fname": "Matias",
+            "lname": "Villar"
         },
         {
-            "name": "Christian Winert"
+            "fname": "Christian",
+            "lname": "Winert"
         },
         {
-            "name": "Tyler Wright"
+            "fname": "Tyler",
+            "lname": "Wright"
         }
     ]
 }
