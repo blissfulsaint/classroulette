@@ -2,140 +2,174 @@
     "students": [
         {
             "fname": "Joseph",
-            "lname": "Allen"
+            "lname": "Allen",
+            "profilepic": "...."
         },
         {
             "fname": "Josue",
-            "lname": "Avila"
+            "lname": "Avila",
+            "profilepic": "...."
         },
         {
             "fname": "Kaleb",
-            "lname": "Bradford"
+            "lname": "Bradford",
+            "profilepic": "...."
         },
         {
             "fname": "Indy", 
-            "lname": "Brown"
+            "lname": "Brown",
+            "profilepic": "...."
         },
         {
             "fname": "Jessica",
-            "lname": "Clark"
+            "lname": "Clark",
+            "profilepic": "...."
             
         },
         {
             "fname": "Jon",
-            "lname": "Connell"
+            "lname": "Connell",
+            "profilepic": "...."
         },
         {
             "fname": "Mark",
-            "lname": "Cuizon"
+            "lname": "Cuizon",
+            "profilepic": "...."
         },
         {
             "fname": "Jared",
-            "lname": "Davey"
+            "lname": "Davey",
+            "profilepic": "...."
         },
         {
             "fname": "Tad",
-            "lname": "Decker"
+            "lname": "Decker",
+            "profilepic": "...."
         },
         {
             "fname": "Lauren",
-            "lname": "Dulgarian"
+            "lname": "Dulgarian",
+            "profilepic": "...."
         },
         {
             "fname": "Jeremiah",
-            "lname": "Franco"
+            "lname": "Franco",
+            "profilepic": "...."
         },
         {
             "fname": "Gavin",
-            "lname": "Hart"
+            "lname": "Hart",
+            "profilepic": "...."
         },
         {
             "fname": "Jacob",
-            "lname": "Holst"
+            "lname": "Holst",
+            "profilepic": "...."
         },
         {
             "fname": "Jaelee",
-            "lname": "Jeong"
+            "lname": "Jeong",
+            "profilepic": "...."
         },
         {
             "fname": "Christopher",
-            "lname": "Jones"
+            "lname": "Jones",
+            "profilepic": "...."
         },
         {
             "fname": "Christopher",
-            "lname": "Larson"
+            "lname": "Larson",
+            "profilepic": "...."
         },
         {
             "fname": "Brandon",
-            "lname": "Lisonbee"
+            "lname": "Lisonbee",
+            "profilepic": "...."
         },
         {
             "fname": "Matt",
-            "lname": "McGrath"
+            "lname": "McGrath",
+            "profilepic": "...."
         },
         {
             "fname": "Braxton",
-            "lname": "Medeiros"
+            "lname": "Medeiros",
+            "profilepic": "...."
         },
         {
             "fname": "Obe",
-            "lname": "Megargel"
+            "lname": "Megargel",
+            "profilepic": "...."
         },
         {
             "fname": "Jade",
-            "lname": "Miller"
+            "lname": "Miller",
+            "profilepic": "...."
         },
         {
             "fname": "Emily",
-            "lname": "Raventos"
+            "lname": "Raventos",
+            "profilepic": "...."
         },
         {
             "fname": "Mo",
-            "lname": "Ray"
+            "lname": "Ray",
+            "profilepic": "...."
         },
         {
             "fname": "Allen",
-            "lname": "Rutledge"
+            "lname": "Rutledge",
+            "profilepic": "...."
         },
         {
             "fname": "Matthew",
-            "lname": "Scoresby"
+            "lname": "Scoresby",
+            "profilepic": "...."
         },
         {
             "fname": "Carter",
-            "lname": "Solberg"
+            "lname": "Solberg",
+            "profilepic": "...."
         },
         {
             "fname": "Natalie",
-            "lname": "Tesam"
+            "lname": "Tesam",
+            "profilepic": "...."
         },
         {
             "fname": "Max",
-            "lname": "Tippetts"
+            "lname": "Tippetts",
+            "profilepic": "...."
         },
         {
             "fname": "Joseph",
-            "lname": "Turgoose"
+            "lname": "Turgoose",
+            "profilepic": "...."
         },
         {
             "fname": "Matthew",
-            "lname": "Twede"
+            "lname": "Twede",
+            "profilepic": "...."
         },
         {
             "fname": "Bryant",
-            "lname": "Van Orden"
+            "lname": "Van Orden",
+            "profilepic": "...."
         },
         {
             "fname": "Matias",
-            "lname": "Villar"
+            "lname": "Villar",
+            "profilepic": "...."
         },
         {
             "fname": "Christian",
-            "lname": "Winert"
+            "lname": "Winert",
+            "profilepic": "...."
         },
         {
             "fname": "Tyler",
-            "lname": "Wright"
+            "lname": "Wright",
+            "profilepic": "...."
         }
     ]
 }
