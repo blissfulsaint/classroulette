@@ -1,0 +1,39 @@
+@import "../composition/theme";
+nav
+{
+    background-color: $secondary-color;
+    width: auto;
+    overflow: auto;
+    ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: auto;
+        li
+        {
+            list-style-type: none;
+            flex: 1;
+            text-align: center;
+            justify-content: center;
+            
+            a
+            {
+                padding: 1em;
+                width: fit-content;
+                display: block;
+                color: $accent2;
+                text-decoration: none;
+                transition: .5s;
+                width: auto;
+                &:hover
+                {
+                    background-color: $accent1;
+                    color:black;
+                    border-radius: 1em;
+                    
+                }
+            }
+        }
+    }
+}
