@@ -19,7 +19,6 @@ h1, h2, h3, h4, p, a, ul, li {
   margin: 0;
   padding: 0;
 }
-
 .last-name {
   display: none;
 }
@@ -27,6 +26,63 @@ h1, h2, h3, h4, p, a, ul, li {
   .last-name {
     display: inline;
   }
+header {
+  background-color: #9CC5A1;
+}
+
+nav {
+  background-color: #9CC5A1;
+  width: auto;
+  overflow: auto;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: auto;
+}
+nav ul li {
+  list-style-type: none;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+nav ul li a {
+  padding: 1em;
+  width: fit-content;
+  display: block;
+  color: #1F2421;
+  text-decoration: none;
+  transition: 0.5s;
+  width: auto;
+}
+nav ul li a:hover {
+  background-color: #216869;
+  color: black;
+  border-radius: 1em;
+}
+
+footer {
+  height: 100px;
+  background-color: #49A078;
+}
+
+main {
+  background-color: #DCE1DE;
+  flex: 1;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #DCE1DE;
+}
+body button {
+  max-width: 50%;
+  min-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
