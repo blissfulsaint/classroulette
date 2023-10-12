@@ -19,13 +19,7 @@ h1, h2, h3, h4, p, a, ul, li {
   margin: 0;
   padding: 0;
 }
-.last-name {
-  display: none;
-}
-@media screen and (min-width: 400px) {
-  .last-name {
-    display: inline;
-  }
+
 header {
   background-color: #9CC5A1;
 }
@@ -70,6 +64,15 @@ footer {
 main {
   background-color: #DCE1DE;
   flex: 1;
+}
+
+.last-name {
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .last-name {
+    display: inline;
+  }
 }
 
 body {
