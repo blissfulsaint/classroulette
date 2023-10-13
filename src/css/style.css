@@ -1,91 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Raleway&display=swap");
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 html {
   height: 100%;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 h1, h2, h3, h4, p, a, ul, li {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif; }
+
+p, a, li, span, label, input, legend, tr, td, th {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem; }
 
 header {
-  background-color: #9CC5A1;
-}
+  background-color: #9CC5A1; }
 
 nav {
   background-color: #9CC5A1;
   width: auto;
-  overflow: auto;
-}
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  overflow: auto;
-}
-nav ul li {
-  list-style-type: none;
-  flex: 1;
-  text-align: center;
-  justify-content: center;
-}
-nav ul li a {
-  padding: 1em;
-  width: fit-content;
-  display: block;
-  color: #1F2421;
-  text-decoration: none;
-  transition: 0.5s;
-  width: auto;
-}
-nav ul li a:hover {
-  background-color: #216869;
-  color: black;
-  border-radius: 1em;
-}
+  overflow: auto; }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: auto; }
+    nav ul li {
+      list-style-type: none;
+      flex: 1;
+      text-align: center;
+      justify-content: center; }
+      nav ul li a {
+        padding: 1em;
+        width: fit-content;
+        display: block;
+        color: #1F2421;
+        text-decoration: none;
+        transition: .5s;
+        width: auto; }
+        nav ul li a:hover {
+          background-color: #216869;
+          color: black;
+          border-radius: 1em; }
 
 footer {
   height: 100px;
-  background-color: #49A078;
-}
+  background-color: #49A078; }
 
 main {
   background-color: #DCE1DE;
-  flex: 1;
-}
+  flex: 1; }
 
 .last-name {
-  display: none;
-}
-@media screen and (min-width: 400px) {
-  .last-name {
-    display: inline;
-  }
-}
+  display: none; }
+  @media screen and (min-width: 400px) {
+    .last-name {
+      display: inline; } }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #DCE1DE;
-}
-body button {
-  max-width: 50%;
-  min-width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  background-color: #DCE1DE; }
+  body button {
+    max-width: 50%;
+    min-width: 20%;
+    margin-left: auto;
+    margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */
