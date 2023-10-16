@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Raleway&display=swap');
+
+
+$heading-font: 'Poppins', sans-serif;
+$paragraph-font: 'Raleway', sans-serif;
+
+
+h1, h2, h3, h4 {
+    font-family: $heading-font;
+}
+
+p, a, li, span, label, input, legend, tr, td, th {
+    font-family: $paragraph-font;
+    font-size: 1.2rem;
+}
