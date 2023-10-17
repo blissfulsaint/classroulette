@@ -5,6 +5,17 @@ body
     min-height: 100vh;
     flex-direction: column;
     background-color: $primary-color;
+    &.dark
+    {
+        background-color: black;
+        p, span, label, h1, h2, h3, h4
+        {
+            color:white;
+        }
+        main {
+            background-color: black; 
+        }
+    }
     button
     {
         max-width: 50%;
@@ -12,4 +23,5 @@ body
         margin-left: auto;
         margin-right: auto;
     }
+
 }
