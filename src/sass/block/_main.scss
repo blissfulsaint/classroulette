@@ -3,7 +3,8 @@ main
 {
     background-color: $primary-color;
     flex: 1;
-    
+
+
 }
 
 .last-name {
@@ -13,6 +14,7 @@ main
         display: inline;
     }
 }
+
 #student-list
 {
     display: flex;
@@ -24,6 +26,7 @@ main
         width: 10em;
         padding: .5em;
         text-align: center;
+        background-color: $secondary-color;
         @media screen and (min-width: 400px)
         {
             width: 15em;

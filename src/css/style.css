@@ -85,6 +85,9 @@ main {
   }
 }
 
+
+.student-name {
+  background-color: #9CC5A1;
 #student-list {
   display: flex;
   flex-wrap: wrap;
