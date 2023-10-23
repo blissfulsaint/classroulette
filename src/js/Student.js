@@ -1,8 +1,8 @@
 export default class Student {
-    constructor (fname, lname, image) {
+    constructor (fname, lname, profilepic) {
         this.fname = fname;
         this.lname = lname;
-        this.image = image;
+        this.profilepic = profilepic;
 
         this.init();
     }
