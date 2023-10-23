@@ -1,0 +1,175 @@
+{
+    "students": [
+        {
+            "fname": "Joseph",
+            "lname": "Allen",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Josue",
+            "lname": "Avila",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Kaleb",
+            "lname": "Bradford",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Indy", 
+            "lname": "Brown",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Jessica",
+            "lname": "Clark",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+            
+        },
+        {
+            "fname": "Jon",
+            "lname": "Connell",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Mark",
+            "lname": "Cuizon",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Jared",
+            "lname": "Davey",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Tad",
+            "lname": "Decker",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Lauren",
+            "lname": "Dulgarian",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Jeremiah",
+            "lname": "Franco",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Gavin",
+            "lname": "Hart",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Jacob",
+            "lname": "Holst",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Jaelee",
+            "lname": "Jeong",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Christopher",
+            "lname": "Jones",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Christopher",
+            "lname": "Larson",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Brandon",
+            "lname": "Lisonbee",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Matt",
+            "lname": "McGrath",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Braxton",
+            "lname": "Medeiros",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Obe",
+            "lname": "Megargel",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Jade",
+            "lname": "Miller",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Emily",
+            "lname": "Raventos",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Mo",
+            "lname": "Ray",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Allen",
+            "lname": "Rutledge",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Matthew",
+            "lname": "Scoresby",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Carter",
+            "lname": "Solberg",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Natalie",
+            "lname": "Tesam",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Max",
+            "lname": "Tippetts",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Joseph",
+            "lname": "Turgoose",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Matthew",
+            "lname": "Twede",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Bryant",
+            "lname": "Van Orden",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Matias",
+            "lname": "Villar",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Christian",
+            "lname": "Winert",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        },
+        {
+            "fname": "Tyler",
+            "lname": "Wright",
+            "profilepic": "../images/anonymous_person_bold_png.jpg"
+        }
+    ]
+}
