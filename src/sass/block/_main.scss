@@ -3,7 +3,8 @@ main
 {
     background-color: $primary-color;
     flex: 1;
-    
+
+
 }
 
 .last-name {
@@ -12,4 +13,7 @@ main
     @media screen and (min-width: 400px) {
         display: inline;
     }
+}
+.student-name{
+    background-color: $secondary-color;
 }

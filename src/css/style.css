@@ -85,6 +85,10 @@ main {
   }
 }
 
+.student-name {
+  background-color: #9CC5A1;
+}
+
 body {
   display: flex;
   min-height: 100vh;
