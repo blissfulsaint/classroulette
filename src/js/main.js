@@ -73,13 +73,27 @@ async function darkMode() {
 
 fetchData();
 
-// change inside of the function later
-// pass is placholder for selecting students
+
+// reference button from html
+const selectStudentButton = document.getElementById("select-student-button");
+
+// randomly select a student after clicking the button
+// highlight selected name
 function onButtonClick() {
-    // pass;
+    const students = document.querySelectorAll('.student-name');
+
+    // remove previous highlights if any
+    students.forEach(div => div.classList.remove('highlighted'));
+
+    // random index and student
+    const randomIndex = Math.floor(Math.random() * students.length)
+    const randomStudent = students[randomIndex];
+
+    // highlight random student chosen
+    randomStudent.classList.add('highlighted');
+
 }
   
 // click button
-const button = document.querySelector('button');
-button.addEventListener('click', onButtonClick);
+selectStudentButton.addEventListener('click', onButtonClick);
 
