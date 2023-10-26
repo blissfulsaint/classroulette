@@ -19,6 +19,7 @@ async function fetchData() {
     return students;
 }
 
+
 const targetNode = document.querySelector("nav");
 
 const config = { attributes: true, childList: true, subtee: true };
