@@ -20,17 +20,17 @@ async function fetchData() {
 }
 
 
-const targetNode = document.querySelector("nav");
+const targetNode = document.querySelector('nav');
 
 const config = { attributes: true, childList: true, subtee: true };
 
 const callback = (mutationList, observer) => {
     for (const mutation of mutationList) {
-        if (mutation.type === "childList") {
-            console.log("A child node has been mutated.");
+        if (mutation.type === 'childList') {
+            console.log('A child node has been mutated.');
             darkMode();
             observer.disconnect();
-        } else if (mutation.type === "attributes") {
+        } else if (mutation.type === 'attributes') {
             console.log(`The ${mutation.attributeName} attribute was mutated.`);
         }
     }
@@ -41,7 +41,7 @@ const observer = new MutationObserver(callback);
 observer.observe(targetNode, config);
 
 if (window.localStorage.getItem('darkmode') == 'TRUE') {
-    let element = document.querySelector("body");
+    let element = document.querySelector('body');
 
     element.classList.remove('light');
     element.classList.remove('dark');
@@ -49,9 +49,9 @@ if (window.localStorage.getItem('darkmode') == 'TRUE') {
 }
 
 async function darkMode() {
-    let element = document.querySelector("body");
+    let element = document.querySelector('body');
 
-    const themeBtn = document.getElementById("theme-btn");
+    const themeBtn = document.getElementById('theme-btn');
     if (window.localStorage.getItem('darkmode') == 'TRUE') {
         element.classList.remove('light');
         element.classList.add('dark');
@@ -60,12 +60,12 @@ async function darkMode() {
     themeBtn.onclick = () => {
         if (themeBtn.innerHTML === 'dark_mode') {
             element.classList.remove('light');
-            element.classList.add("dark");
+            element.classList.add('dark');
             themeBtn.innerHTML = 'light_mode';
             window.localStorage.setItem('darkmode', 'TRUE')
         } else {
             element.classList.remove('dark');
-            element.classList.add("light");
+            element.classList.add('light');
             themeBtn.innerHTML = 'dark_mode';
             window.localStorage.setItem('darkmode', 'FALSE');
         }
@@ -76,7 +76,7 @@ fetchData();
 
 
 // reference button from html
-const selectStudentButton = document.getElementById("select-student-button");
+const selectStudentButton = document.getElementById('select-student-button');
 
 // randomly select a student after clicking the button
 // highlight selected name

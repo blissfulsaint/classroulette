@@ -102,6 +102,14 @@ main {
     width: 15em;
   }
 }
+#student-list .student-name.highlighted {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 150px;
+}
 
 body {
   display: flex;
