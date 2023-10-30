@@ -85,6 +85,24 @@ main {
   }
 }
 
+#student-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+#student-list .student-name {
+  width: 10em;
+  padding: 0.5em;
+  text-align: center;
+  background-color: #9CC5A1;
+}
+@media screen and (min-width: 400px) {
+  #student-list .student-name {
+    width: 15em;
+  }
+}
+
 body {
   display: flex;
   min-height: 100vh;

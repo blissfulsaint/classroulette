@@ -3,7 +3,8 @@ main
 {
     background-color: $primary-color;
     flex: 1;
-    
+
+
 }
 
 .last-name {
@@ -17,4 +18,22 @@ main
 .highlighted {
     background-color: yellow;
     font-weight: bold;
+}
+#student-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    .student-name
+    {
+        width: 10em;
+        padding: .5em;
+        text-align: center;
+        background-color: $secondary-color;
+        @media screen and (min-width: 400px)
+        {
+            width: 15em;
+        }
+    }
 }

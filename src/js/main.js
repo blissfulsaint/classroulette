@@ -12,7 +12,7 @@ async function fetchData() {
     let i = 0;
 
     students.forEach(element => {
-        studentCards[i] = new Student(element.fname, element.lname, element.image);
+        studentCards[i] = new Student(element.fname, element.lname, element.profilepic);
         i++;
     })
 
