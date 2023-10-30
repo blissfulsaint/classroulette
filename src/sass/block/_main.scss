@@ -7,10 +7,12 @@ main
 
 }
 
-.last-name {
+.last-name 
+{
     display: none;
 
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 400px) 
+    {
         display: inline;
     }
 }
@@ -37,3 +39,12 @@ main
         }
     }
 }
+
+.logo //this is assuming that 'logo' is the name of the class that contains the logo (which I highly reccomend)  
+{
+	img 
+	{
+		width: 150px;
+	}
+}
+
