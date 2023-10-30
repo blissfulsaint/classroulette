@@ -15,6 +15,10 @@ main
     }
 }
 
+.highlighted {
+    background-color: yellow;
+    font-weight: bold;
+}
 #student-list
 {
     display: flex;
