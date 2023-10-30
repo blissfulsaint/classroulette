@@ -17,10 +17,6 @@ main
     }
 }
 
-.highlighted {
-    background-color: yellow;
-    font-weight: bold;
-}
 #student-list
 {
     display: flex;
@@ -36,6 +32,11 @@ main
         @media screen and (min-width: 400px)
         {
             width: 15em;
+        }
+        
+        &.highlighted {
+            background-color: yellow;
+            font-weight: bold;
         }
     }
 }
