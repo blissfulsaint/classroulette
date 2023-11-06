@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "_id": 3,
+            "fname": "Nathan",
+            "lname": "Birch",
+            "username": "nbirch",
+            "password": "applied123",
+            "classlist": [
+                {
+                    "class_id": 310
+                }
+            ]
+        }
+    ]
+}
