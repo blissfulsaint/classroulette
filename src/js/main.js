@@ -5,7 +5,9 @@ loadHeaderNavFooter();
 
 async function fetchData() {
     let response = await fetch('../json/names.json');
+    // let response = await fetch("http://localhost:3000/classes/654935df81859ae8211f6340");
     let data = await response.json();
+    console.log(data);
     let students = data.students;
 
     let studentCards = new Array();
