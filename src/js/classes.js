@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return response.json();
         })
         .then(function (data) {
-            populateDropdown(data.classes);
+            populateDropdown(data);
         })
         .catch(function (err) {
             console.log('error: ' + err);
