@@ -74,21 +74,31 @@ async function darkMode() {
 
 fetchData();
 
+// function to adjust how quickly the delay changes
+function cubicEase(t) {
+    return t < 0.5 ? 4 * t * t : (t - 1)  * (2 * t - 2) + 1;
+}
+
+// function to loop randomStudent selection
 function onButtonClick() {
-    let loops = Math.floor(Math.random() * 10) + 10;
-    for (let i = 0; i < loops; i++) {
-        // randomStudent()
-        setTimeout(
-            function() {
-                randomStudent();
-            },
-            i * 200
-        );
+    // loop the function 20 times
+    for (let i = 0; i < 20; i++) {
+        // change i to a number between 0 and 1
+        let t = i / 19;
+        // scale t however much is desired
+        let scaledT = t * 50;
+        const delay = cubicEase(scaledT);
+        // delay the function call by "delay" every iteration
+        setTimeout(function() {
+            randomStudent();
+        }, delay);
     }
 }
 
 // reference button from html
 const selectStudentButton = document.getElementById('select-student-button');
+
+let previousRandomIndex = -1;
 
 // randomly select a student after clicking the button
 // highlight selected name
@@ -99,7 +109,16 @@ function randomStudent() {
     students.forEach(div => div.classList.remove('highlighted'));
 
     // random index and student
-    const randomIndex = Math.floor(Math.random() * students.length)
+    let randomIndex;
+
+    // keep selecting random indexes until it doesn't match the previous index
+    do {
+        randomIndex = Math.floor(Math.random() * students.length)
+    } while (randomIndex === previousRandomIndex);
+
+    // record the previous index
+    previousRandomIndex = randomIndex;
+    
     const randomStudent = students[randomIndex];
 
     // highlight random student chosen
