@@ -18,6 +18,12 @@
 
     </nav>
     <main>
+      <label for="classDropdown">Select Class:</label>
+      <select id="classDropdown" onchange="fetchClassData()">
+      <option value="">Select a class</option>
+      </select>
+
+      <div id="myData"></div>
       <div id="student-list">
       </div>
       <button id="select-student-button">Select Student</button>
@@ -27,5 +33,6 @@
 
     </footer>
     <script defer src="js/main.js" type="module"></script>
+    <script src="js/classes.js"></script>
   </body>
 </html>
