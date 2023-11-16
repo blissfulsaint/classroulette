@@ -1,8 +1,9 @@
 import Student from './Student.js';
+// eslint-disable-next-line import/no-unresolved
 import { jwtDecode } from 'jwt-decode';
 
-// const apiUrl = 'https://prayerselectorapi.onrender.com';
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://prayerselectorapi.onrender.com';
+// const apiUrl = 'http://localhost:3000';
 
 
 document.addEventListener('DOMContentLoaded', async function() {
