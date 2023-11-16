@@ -1,7 +1,7 @@
 // script.js
 
-// const apiUrl = 'https://prayerselectorapi.onrender.com';
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://prayerselectorapi.onrender.com';
+// const apiUrl = 'http://localhost:3000';
 
 // Function to check if the user is logged in
 function checkLoginStatus() {
@@ -10,16 +10,18 @@ function checkLoginStatus() {
 }
 
 // Function to simulate a logout (clear the token)
+// eslint-disable-next-line no-unused-vars
 function logout() {
-    localStorage.removeItem("token");
+    localStorage.removeItem('token');
     
-    window.location.href = "/index.html";
+    window.location.href = '/index.html';
 }
 
 
+// eslint-disable-next-line no-unused-vars
 async function login() {
-    const usernameInput = document.getElementById("username");
-    const passwordInput = document.getElementById("password");
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
 
     const username = usernameInput.value;
     const password = passwordInput.value;
@@ -35,7 +37,7 @@ async function login() {
     if (response.ok) {
         alert('Login succeeded');
         const { token } = await response.json();
-        localStorage.setItem("token", token);
+        localStorage.setItem('token', token);
         
         window.location.href = '/user/index.html';
     } else {
@@ -44,7 +46,7 @@ async function login() {
 }
 
 // Check login status when the page loads
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     checkLoginStatus();
 });
   
