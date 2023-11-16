@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Prayer Selector</title>
     <!-- <script defer src="js/main.js" type="module"></script> -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
     <header>
@@ -18,20 +18,21 @@
 
     </nav>
     <main>
-      <h1>Welcome to the Prayer Selector!</h1>
-      <p>[Tell the user about the web app]</p>
+      <label for="classDropdown">Select Class:</label>
+      <select id="classDropdown" onchange="fetchClassData()">
+      <option value="">Select a class</option>
+      </select>
 
-      <div id="home-links">
-        <!-- Javascript should insert links for login OR the prayer selector
-        depending on whether or not the user is logged in -->
-        
+      <div id="myData"></div>
+      <div id="student-list">
       </div>
+      <button id="select-student-button">Select Student</button>
     </main>
     <footer>
       <!-- partial needs to go here -->
 
     </footer>
-    <script defer src="js/main.js" type="module"></script>
-    <script src="js/classes.js" type="module"></script>
+    <script defer src="../js/main.js" type="module"></script>
+    <script src="../js/classes.js" type="module"></script>
   </body>
 </html>

@@ -31,7 +31,24 @@ p, a, li, span, label, input, legend, tr, td, th {
 }
 
 header {
-  background-color: #9CC5A1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .logo-link {
+  display: block;
+  margin: 0.25em;
+}
+header #theme-btn {
+  font-size: 3em;
+  display: block;
+  margin: auto 0.25em auto auto;
+  width: fit-content;
+  transition: 0.2s;
+  color: #49A078;
+}
+header #theme-btn:hover {
+  cursor: pointer;
+  color: #9CC5A1;
 }
 
 nav {
@@ -44,10 +61,10 @@ nav ul {
   flex-wrap: wrap;
   width: 100%;
   overflow: auto;
+  justify-content: right;
 }
 nav ul li {
   list-style-type: none;
-  flex: 1;
   text-align: center;
   justify-content: center;
 }
@@ -57,18 +74,21 @@ nav ul li a {
   display: block;
   color: #1F2421;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.2s;
   width: auto;
 }
 nav ul li a:hover {
   background-color: #216869;
-  color: black;
+  color: white;
   border-radius: 1em;
 }
 
 footer {
   height: 100px;
   background-color: #49A078;
+}
+footer p {
+  color: white;
 }
 
 main {
@@ -148,11 +168,23 @@ body.dark p, body.dark span, body.dark label, body.dark h1, body.dark h2, body.d
 body.dark main {
   background-color: black;
 }
+body.dark #theme-btn {
+  color: #49A078;
+}
+body.dark #theme-btn:hover {
+  color: #DCE1DE;
+}
 body button {
   max-width: 50%;
   min-width: 20%;
   margin-left: auto;
   margin-right: auto;
+}
+body .logo-link {
+  text-decoration: none;
+}
+body .logo-link .logo {
+  width: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

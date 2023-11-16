@@ -10,10 +10,10 @@ nav
         flex-wrap: wrap;
         width: 100%;
         overflow: auto;
+        justify-content: right;
         li
         {
             list-style-type: none;
-            flex: 1;
             text-align: center;
             justify-content: center;
             
@@ -24,12 +24,12 @@ nav
                 display: block;
                 color: $accent2;
                 text-decoration: none;
-                transition: .5s;
+                transition: .2s;
                 width: auto;
                 &:hover
                 {
                     background-color: $accent1;
-                    color:black;
+                    color:white;
                     border-radius: 1em;
                     
                 }
