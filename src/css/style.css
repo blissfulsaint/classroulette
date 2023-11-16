@@ -25,13 +25,30 @@ h1, h2, h3, h4 {
   font-family: "Poppins", sans-serif;
 }
 
-p, a, li, span, label, input, legend, tr, td, th {
+p, a, li, span, label, input, legend, tr, td, th, select, button {
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
 }
 
 header {
-  background-color: #9CC5A1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .logo-link {
+  display: block;
+  margin: 0.25em;
+}
+header #theme-btn {
+  font-size: 3em;
+  display: block;
+  margin: auto 0.25em auto auto;
+  width: fit-content;
+  transition: 0.2s;
+  color: #49A078;
+}
+header #theme-btn:hover {
+  cursor: pointer;
+  color: #9CC5A1;
 }
 
 nav {
@@ -44,10 +61,10 @@ nav ul {
   flex-wrap: wrap;
   width: 100%;
   overflow: auto;
+  justify-content: right;
 }
 nav ul li {
   list-style-type: none;
-  flex: 1;
   text-align: center;
   justify-content: center;
 }
@@ -57,12 +74,12 @@ nav ul li a {
   display: block;
   color: #1F2421;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.2s;
   width: auto;
 }
 nav ul li a:hover {
   background-color: #216869;
-  color: black;
+  color: white;
   border-radius: 1em;
 }
 
@@ -70,9 +87,11 @@ footer {
   height: 100px;
   background-color: #49A078;
 }
+footer p {
+  color: white;
+}
 
 main {
-  background-color: #DCE1DE;
   flex: 1;
 }
 
@@ -83,6 +102,17 @@ main {
   .last-name {
     display: inline;
   }
+}
+
+.classDropdownContainer {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+select {
+  padding: 0.2em;
+  border-radius: 0.5em;
+  margin: 1em auto;
 }
 
 #student-list {
@@ -97,6 +127,9 @@ main {
   text-align: center;
   background-color: #9CC5A1;
 }
+#student-list .student-name span {
+  color: black;
+}
 @media screen and (min-width: 400px) {
   #student-list .student-name {
     width: 15em;
@@ -105,6 +138,26 @@ main {
 #student-list .student-name.highlighted {
   background-color: yellow;
   font-weight: bold;
+}
+#student-list .student-name.highlighted span {
+  color: black;
+}
+
+button {
+  display: block;
+  margin: 2em auto;
+  box-sizing: border-box;
+  background-color: #216869;
+  border: none;
+  padding: 0.5em 2em;
+  color: white;
+  transition: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #9CC5A1;
+  color: black;
+  border-radius: 1em;
 }
 
 .logo img {
@@ -138,6 +191,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-color: #DCE1DE;
+  transition: 0.5s;
 }
 body.dark {
   background-color: black;
@@ -145,14 +199,17 @@ body.dark {
 body.dark p, body.dark span, body.dark label, body.dark h1, body.dark h2, body.dark h3, body.dark h4 {
   color: white;
 }
-body.dark main {
-  background-color: black;
+body.dark #theme-btn {
+  color: #49A078;
 }
-body button {
-  max-width: 50%;
-  min-width: 20%;
-  margin-left: auto;
-  margin-right: auto;
+body.dark #theme-btn:hover {
+  color: #DCE1DE;
+}
+body .logo-link {
+  text-decoration: none;
+}
+body .logo-link .logo {
+  width: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

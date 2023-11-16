@@ -1,26 +1,36 @@
 import Student from './Student.js';
+import { jwtDecode } from 'jwt-decode';
 
-const apiUrl = 'https://prayerselectorapi.onrender.com';
-// const apiUrl = 'http://localhost:3000';
+// const apiUrl = 'https://prayerselectorapi.onrender.com';
+const apiUrl = 'http://localhost:3000';
+
 
 document.addEventListener('DOMContentLoaded', async function() {
     // fetch('/json/classes.json') // Fetch JSON data (testing only)
-    await fetch(`${apiUrl}/classes`)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            populateDropdown(data);
-        })
-        .catch(function (err) {
-            console.log('error: ' + err);
-        });
+    const token = localStorage.getItem('token');
 
-    // Assuming you have a dropdown element with id 'classDropdown'
-    var dropdown = document.getElementById('classDropdown');
+    if (token) {
+        const decodedToken = jwtDecode(token);
+        const userId = decodedToken.id;
+
+        await fetch(`${apiUrl}/users/${userId}/classesInfo`)
+            .then(function (response) {
+                // console.log(response.json());
+                return response.json();
+            })
+            .then(function (data) {
+                populateDropdown(data.classes);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
     
-    // Add an event listener to the 'change' event
-    dropdown.addEventListener('change', fetchClassData);
+        // Assuming you have a dropdown element with id 'classDropdown'
+        var dropdown = document.getElementById('classDropdown');
+        
+        // Add an event listener to the 'change' event
+        dropdown.addEventListener('change', fetchClassData);
+    }
 });
 
 function populateDropdown(classes) {
@@ -29,15 +39,14 @@ function populateDropdown(classes) {
     classes.forEach(function(cls) {
         var option = document.createElement('option');
         option.value = cls._id;
-        console.log(cls._id);
         option.text = cls.department + ' ' + cls.code;
         dropdown.appendChild(option);
     });
 }
 
 async function fetchClassData() {
-    const element = document.getElementById('student-list');
-    element.innerHTML = '';
+    const element = document.getElementById('student-list-container');
+    element.innerHTML = '<div id="student-list"></div>';
     showLoadingIndicator();
 
     var dropdown = document.getElementById('classDropdown');
@@ -56,6 +65,15 @@ async function fetchClassData() {
 
                 if (selectedClass) {
                     renderStudentCards(selectedClass);
+
+                    const selectBtn = '<button id="select-student-button">Select Student</button>';
+                    element.insertAdjacentHTML('beforeend', selectBtn);
+
+                    // reference button from html
+                    const selectStudentButton = document.getElementById('select-student-button');
+  
+                    // click button
+                    selectStudentButton.addEventListener('click', onButtonClick);
                 } else {
                     console.log('Class not found');
                     hideLoadingIndicator();
@@ -80,7 +98,6 @@ function clearData() {
 async function renderStudentCards(classData) {
 
     let data = classData;
-    console.log(data);
     let students = data.students;
 
     let studentCards = new Array();
@@ -107,4 +124,53 @@ function showLoadingIndicator() {
 function hideLoadingIndicator() {
     var loadingSpinner = document.getElementById('loading-spinner');
     loadingSpinner.style.display = 'none';
+}
+
+// function to adjust how quickly the delay changes
+function cubicEase(t) {
+    return t < 0.5 ? 4 * t * t : (t - 1)  * (2 * t - 2) + 1;
+}
+
+// function to loop randomStudent selection
+function onButtonClick() {
+    // loop the function 20 times
+    for (let i = 0; i < 20; i++) {
+        // change i to a number between 0 and 1
+        let t = i / 19;
+        // scale t however much is desired
+        let scaledT = t * 50;
+        const delay = cubicEase(scaledT);
+        // delay the function call by "delay" every iteration
+        setTimeout(function() {
+            randomStudent();
+        }, delay);
+    }
+}
+
+let previousRandomIndex = -1;
+
+// randomly select a student after clicking the button
+// highlight selected name
+function randomStudent() {
+    const students = document.querySelectorAll('.student-name');
+
+    // remove previous highlights if any
+    students.forEach(div => div.classList.remove('highlighted'));
+
+    // random index and student
+    let randomIndex;
+
+    // keep selecting random indexes until it doesn't match the previous index
+    do {
+        randomIndex = Math.floor(Math.random() * students.length)
+    } while (randomIndex === previousRandomIndex);
+
+    // record the previous index
+    previousRandomIndex = randomIndex;
+    
+    const randomStudent = students[randomIndex];
+
+    // highlight random student chosen
+    randomStudent.classList.add('highlighted');
+
 }

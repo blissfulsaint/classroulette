@@ -1,5 +1,27 @@
 @import "../composition/theme";
 header
 {
-    background-color: $secondary-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .logo-link {
+        display: block;
+        margin: .25em;
+    }
+
+    #theme-btn {
+        font-size: 3em;
+        display: block;
+        margin: auto .25em auto auto;
+        width: fit-content;
+
+        transition: .2s;
+
+        color: $primary-color;
+
+        &:hover {
+            cursor: pointer;
+            color: $secondary-color;
+        }
+    }
 }

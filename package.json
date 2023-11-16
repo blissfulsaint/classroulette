@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/blissfulsaint/cse310team#readme",
   "dependencies": {
+    "@types/jwt-decode": "^3.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
     "node": "^20.7.0"
   },
   "devDependencies": {

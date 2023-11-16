@@ -1,25 +1,25 @@
 import { loadHeaderNavFooter } from './utils.mjs';
-import Student from './Student.js';
+// import Student from './Student.js';
 
 loadHeaderNavFooter();
 
-async function fetchData() {
-    let response = await fetch('../json/names.json');
-    // let response = await fetch("http://localhost:3000/classes/654935df81859ae8211f6340");
-    let data = await response.json();
-    console.log(data);
-    let students = data.students;
+// async function fetchData() {
+//     let response = await fetch('../json/names.json');
+//     // let response = await fetch("http://localhost:3000/classes/654935df81859ae8211f6340");
+//     let data = await response.json();
+//     console.log(data);
+//     let students = data.students;
 
-    let studentCards = new Array();
-    let i = 0;
+//     let studentCards = new Array();
+//     let i = 0;
 
-    students.forEach(element => {
-        studentCards[i] = new Student(element.fname, element.lname, element.profilepic);
-        i++;
-    })
+//     students.forEach(element => {
+//         studentCards[i] = new Student(element.fname, element.lname, element.profilepic);
+//         i++;
+//     })
 
-    return students;
-}
+//     return students;
+// }
 
 
 const targetNode = document.querySelector('nav');
@@ -74,60 +74,7 @@ async function darkMode() {
     }
 }
 
-fetchData();
+// fetchData();
 
-// function to adjust how quickly the delay changes
-function cubicEase(t) {
-    return t < 0.5 ? 4 * t * t : (t - 1)  * (2 * t - 2) + 1;
-}
 
-// function to loop randomStudent selection
-function onButtonClick() {
-    // loop the function 20 times
-    for (let i = 0; i < 20; i++) {
-        // change i to a number between 0 and 1
-        let t = i / 19;
-        // scale t however much is desired
-        let scaledT = t * 50;
-        const delay = cubicEase(scaledT);
-        // delay the function call by "delay" every iteration
-        setTimeout(function() {
-            randomStudent();
-        }, delay);
-    }
-}
-
-// reference button from html
-const selectStudentButton = document.getElementById('select-student-button');
-
-let previousRandomIndex = -1;
-
-// randomly select a student after clicking the button
-// highlight selected name
-function randomStudent() {
-    const students = document.querySelectorAll('.student-name');
-
-    // remove previous highlights if any
-    students.forEach(div => div.classList.remove('highlighted'));
-
-    // random index and student
-    let randomIndex;
-
-    // keep selecting random indexes until it doesn't match the previous index
-    do {
-        randomIndex = Math.floor(Math.random() * students.length)
-    } while (randomIndex === previousRandomIndex);
-
-    // record the previous index
-    previousRandomIndex = randomIndex;
-    
-    const randomStudent = students[randomIndex];
-
-    // highlight random student chosen
-    randomStudent.classList.add('highlighted');
-
-}
-  
-// click button
-selectStudentButton.addEventListener('click', onButtonClick);
 

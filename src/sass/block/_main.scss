@@ -1,7 +1,6 @@
 @import "../composition/theme";
 main
 {
-    background-color: $primary-color;
     flex: 1;
 
 
@@ -17,6 +16,17 @@ main
     }
 }
 
+.classDropdownContainer {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+select {
+    padding: .2em;
+    border-radius: .5em;
+    margin: 1em auto;
+}
+
 #student-list
 {
     display: flex;
@@ -29,6 +39,10 @@ main
         padding: .5em;
         text-align: center;
         background-color: $secondary-color;
+
+        span {
+            color: black;
+        }
         @media screen and (min-width: 400px)
         {
             width: 15em;
@@ -37,7 +51,31 @@ main
         &.highlighted {
             background-color: yellow;
             font-weight: bold;
+            
+            span {
+                color: black;
+            }
         }
+    }
+}
+
+button {
+    display: block;
+    margin: 2em auto;
+    box-sizing: border-box;
+
+    background-color: $accent1;
+    border: none;
+    padding: .5em 2em;
+    color: white;
+
+    transition: .2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        color: black;
+        border-radius: 1em;
     }
 }
 
