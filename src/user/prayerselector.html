@@ -18,15 +18,16 @@
 
     </nav>
     <main>
-      <label for="classDropdown">Select Class:</label>
-      <select id="classDropdown" onchange="fetchClassData()">
-      <option value="">Select a class</option>
-      </select>
+      <div class="classDropdownContainer">
+        <label for="classDropdown">Select Class:</label>
+        <select id="classDropdown" onchange="fetchClassData()">
+          <option value="">Select a class</option>
+        </select>
+      </div>
 
       <div id="myData"></div>
-      <div id="student-list">
+      <div id="student-list-container">
       </div>
-      <button id="select-student-button">Select Student</button>
     </main>
     <footer>
       <!-- partial needs to go here -->

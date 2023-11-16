@@ -1,26 +1,36 @@
 import Student from './Student.js';
+import { jwtDecode } from 'jwt-decode';
 
 // const apiUrl = 'https://prayerselectorapi.onrender.com';
 const apiUrl = 'http://localhost:3000';
 
+
 document.addEventListener('DOMContentLoaded', async function() {
     // fetch('/json/classes.json') // Fetch JSON data (testing only)
-    await fetch(`${apiUrl}/classes`)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            populateDropdown(data);
-        })
-        .catch(function (err) {
-            console.log('error: ' + err);
-        });
+    const token = localStorage.getItem('token');
 
-    // Assuming you have a dropdown element with id 'classDropdown'
-    var dropdown = document.getElementById('classDropdown');
+    if (token) {
+        const decodedToken = jwtDecode(token);
+        const userId = decodedToken.id;
+
+        await fetch(`${apiUrl}/users/${userId}/classesInfo`)
+            .then(function (response) {
+                // console.log(response.json());
+                return response.json();
+            })
+            .then(function (data) {
+                populateDropdown(data.classes);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
     
-    // Add an event listener to the 'change' event
-    dropdown.addEventListener('change', fetchClassData);
+        // Assuming you have a dropdown element with id 'classDropdown'
+        var dropdown = document.getElementById('classDropdown');
+        
+        // Add an event listener to the 'change' event
+        dropdown.addEventListener('change', fetchClassData);
+    }
 });
 
 function populateDropdown(classes) {
@@ -35,8 +45,8 @@ function populateDropdown(classes) {
 }
 
 async function fetchClassData() {
-    const element = document.getElementById('student-list');
-    element.innerHTML = '';
+    const element = document.getElementById('student-list-container');
+    element.innerHTML = '<div id="student-list"></div>';
     showLoadingIndicator();
 
     var dropdown = document.getElementById('classDropdown');
@@ -55,6 +65,15 @@ async function fetchClassData() {
 
                 if (selectedClass) {
                     renderStudentCards(selectedClass);
+
+                    const selectBtn = '<button id="select-student-button">Select Student</button>';
+                    element.insertAdjacentHTML('beforeend', selectBtn);
+
+                    // reference button from html
+                    const selectStudentButton = document.getElementById('select-student-button');
+  
+                    // click button
+                    selectStudentButton.addEventListener('click', onButtonClick);
                 } else {
                     console.log('Class not found');
                     hideLoadingIndicator();
@@ -128,9 +147,6 @@ function onButtonClick() {
     }
 }
 
-// reference button from html
-const selectStudentButton = document.getElementById('select-student-button');
-
 let previousRandomIndex = -1;
 
 // randomly select a student after clicking the button
@@ -158,6 +174,3 @@ function randomStudent() {
     randomStudent.classList.add('highlighted');
 
 }
-  
-// click button
-selectStudentButton.addEventListener('click', onButtonClick);
