@@ -1,7 +1,7 @@
 // script.js
 
-const apiUrl = 'https://prayerselectorapi.onrender.com';
-// const apiUrl = 'http://localhost:3000';
+// const apiUrl = 'https://prayerselectorapi.onrender.com';
+const apiUrl = 'http://localhost:3000';
 
 // Function to check if the user is logged in
 function checkLoginStatus() {
@@ -17,9 +17,12 @@ function logout() {
     window.location.href = '/index.html';
 }
 
+// document.getElementById('logout-btn').addEventListener('click', logout);
 
 // eslint-disable-next-line no-unused-vars
-async function login() {
+async function login(event) {
+    event.preventDefault();
+
     const usernameInput = document.getElementById('username');
     const passwordInput = document.getElementById('password');
 
@@ -44,6 +47,8 @@ async function login() {
         alert('Login failed. Please check your credentials.');
     }
 }
+
+document.getElementById('loginForm').addEventListener('submit', login);
 
 // Check login status when the page loads
 document.addEventListener('DOMContentLoaded', function() {
