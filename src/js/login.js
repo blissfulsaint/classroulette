@@ -1,23 +1,13 @@
 // script.js
 
-// const apiUrl = 'https://prayerselectorapi.onrender.com';
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://prayerselectorapi.onrender.com';
+// const apiUrl = 'http://localhost:3000';
 
 // Function to check if the user is logged in
 function checkLoginStatus() {
     const token = localStorage.getItem('token');
     return Boolean(token);
 }
-
-// Function to simulate a logout (clear the token)
-// eslint-disable-next-line no-unused-vars
-function logout() {
-    localStorage.removeItem('token');
-    
-    window.location.href = '/index.html';
-}
-
-// document.getElementById('logout-btn').addEventListener('click', logout);
 
 // eslint-disable-next-line no-unused-vars
 async function login(event) {
