@@ -162,7 +162,7 @@ function randomStudent() {
     let randomIndex;
 
     // keep selecting random indexes until it doesn't match the previous index
-    if (students.Length > 1) {
+    if (students.length > 1) {
         do {
             randomIndex = Math.floor(Math.random() * students.length)
         } while (randomIndex === previousRandomIndex);

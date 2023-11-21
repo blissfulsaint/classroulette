@@ -9,17 +9,10 @@ function checkLoginStatus() {
     return Boolean(token);
 }
 
-// Function to simulate a logout (clear the token)
 // eslint-disable-next-line no-unused-vars
-function logout() {
-    localStorage.removeItem('token');
-    
-    window.location.href = '/index.html';
-}
+async function login(event) {
+    event.preventDefault();
 
-
-// eslint-disable-next-line no-unused-vars
-async function login() {
     const usernameInput = document.getElementById('username');
     const passwordInput = document.getElementById('password');
 
@@ -44,6 +37,8 @@ async function login() {
         alert('Login failed. Please check your credentials.');
     }
 }
+
+document.getElementById('loginForm').addEventListener('submit', login);
 
 // Check login status when the page loads
 document.addEventListener('DOMContentLoaded', function() {
