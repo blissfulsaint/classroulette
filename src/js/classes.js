@@ -2,7 +2,7 @@ import Student from './Student.js';
 // eslint-disable-next-line import/no-unresolved
 import { jwtDecode } from 'jwt-decode';
 
-const apiUrl = 'https://prayerselectorapi.onrender.com';
+const apiUrl = 'https://classrouletteapi.onrender.com';
 // const apiUrl = 'http://localhost:3000';
 
 

@@ -1,6 +1,6 @@
 // register.js
 
-const apiUrl = 'https://prayerselectorapi.onrender.com';
+const apiUrl = 'https://classrouletteapi.onrender.com';
 // const apiUrl = 'http://localhost:3000';
 
 // register function
