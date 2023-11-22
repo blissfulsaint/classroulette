@@ -1,10 +1,12 @@
 // register.js
 
-const apiUrl = 'https://prayerselectorapi.onrender.com';
-// const apiUrl = 'http://localhost:3000';
+// const apiUrl = 'https://prayerselectorapi.onrender.com';
+const apiUrl = 'http://localhost:3000';
 
 // register function
-async function register() {
+async function register(event) {
+    event.preventDefault();
+
     const fnameInput = document.getElementById('first_name');
     const lnameInput = document.getElementById('last_name');
     const usernameInput = document.getElementById('username');
@@ -34,4 +36,4 @@ async function register() {
     }
 }
 
-  
+document.getElementById('registrationForm').addEventListener('submit', register);

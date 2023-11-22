@@ -2,8 +2,8 @@ import Student from './Student.js';
 // eslint-disable-next-line import/no-unresolved
 import { jwtDecode } from 'jwt-decode';
 
-const apiUrl = 'https://prayerselectorapi.onrender.com';
-// const apiUrl = 'http://localhost:3000';
+// const apiUrl = 'https://prayerselectorapi.onrender.com';
+const apiUrl = 'http://localhost:3000';
 
 
 document.addEventListener('DOMContentLoaded', async function() {
@@ -66,6 +66,22 @@ async function fetchClassData() {
 
                 if (selectedClass) {
                     renderStudentCards(selectedClass);
+
+                    // Assuming you have multiple student cards on the page
+                    const removeButtons = document.querySelectorAll('.remove-btn');
+
+                    // Add click event listener to each remove button
+                    removeButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            // Get the parent element (student-name) of the clicked remove button
+                            const studentCard = button.closest('.student-name');
+
+                            // Remove the student card from the DOM
+                            if (studentCard) {
+                                studentCard.remove();
+                            }
+                        });
+                    });
 
                     const selectBtn = '<button id="select-student-button">Select Student</button>';
                     element.insertAdjacentHTML('beforeend', selectBtn);

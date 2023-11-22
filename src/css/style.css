@@ -55,6 +55,10 @@ nav {
   background-color: #9CC5A1;
   width: auto;
   overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 0.3em 1em 0.1em rgba(0, 0, 0, 0.686);
 }
 nav ul {
   display: flex;
@@ -84,15 +88,28 @@ nav ul li a:hover {
 }
 
 footer {
-  height: 100px;
+  min-height: 8em;
   background-color: #49A078;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer a {
+  height: fit-content;
+  display: block;
+  margin: auto 0;
 }
 footer p {
   color: white;
+  text-align: center;
+  margin: auto 0;
 }
 
 main {
   flex: 1;
+  max-width: 100em;
+  padding: 2em;
+  margin: 0 auto;
 }
 
 .last-name {
@@ -143,17 +160,19 @@ select {
   color: black;
 }
 
-button {
+button, .button-link {
   display: block;
   margin: 2em auto;
   box-sizing: border-box;
+  width: fit-content;
   background-color: #216869;
   border: none;
   padding: 0.5em 2em;
   color: white;
   transition: 0.2s;
+  text-decoration: none;
 }
-button:hover {
+button:hover, .button-link:hover {
   cursor: pointer;
   background-color: #9CC5A1;
   color: black;
@@ -186,6 +205,32 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+form {
+  margin: 2em auto;
+}
+form fieldset {
+  max-width: 20em;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 0.15em solid #49A078;
+  border-radius: 0.7em;
+  padding: 1em;
+}
+form fieldset legend {
+  color: #49A078;
+}
+form fieldset input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  border: 0.1em solid #49A078;
+}
+form fieldset button {
+  margin: 1em auto 0;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -193,10 +238,22 @@ body {
   background-color: #DCE1DE;
   transition: 0.5s;
 }
+body .page_link {
+  text-decoration: none;
+  color: #216869;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0.5em auto 0;
+  font-size: 0.9em;
+}
+body .page_link:hover {
+  text-decoration: underline;
+}
 body.dark {
   background-color: black;
 }
-body.dark p, body.dark span, body.dark label, body.dark h1, body.dark h2, body.dark h3, body.dark h4 {
+body.dark p, body.dark span, body.dark label, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark fieldset {
   color: white;
 }
 body.dark #theme-btn {
@@ -205,11 +262,135 @@ body.dark #theme-btn {
 body.dark #theme-btn:hover {
   color: #DCE1DE;
 }
+body.dark fieldset input {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+body.dark .page_link {
+  color: #9CC5A1;
+}
+body.dark #hero .hero-content {
+  background-color: rgba(81, 81, 81, 0.2901960784);
+}
+body.dark #hero .hero-content:hover {
+  background-color: rgba(53, 53, 53, 0.6549019608);
+}
+body.dark #home-content #home-text ul li {
+  color: white;
+}
 body .logo-link {
   text-decoration: none;
 }
 body .logo-link .logo {
   width: 3em;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 24em;
+  overflow: hidden;
+}
+#hero .parallax-img {
+  background-image: url("../../images/classroom.jpg");
+  background-size: auto 120%;
+  background-position-y: -4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+@media screen and (min-width: 51em) {
+  #hero .parallax-img {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 100em) {
+  #hero .parallax-img {
+    background-size: cover;
+    background-position-y: -8em;
+  }
+}
+#hero .hero-content {
+  position: absolute;
+  z-index: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  transition: 0.2s;
+}
+#hero .hero-content .button {
+  background-color: #49A078;
+  width: fit-content;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  box-shadow: 0 0 1em 0.1em rgba(0, 0, 0, 0.686);
+}
+#hero .hero-content:hover {
+  background-color: rgba(255, 255, 255, 0.5529411765);
+}
+#hero .hero-content:hover .button {
+  padding: 1em 1.5em;
+}
+
+#home-content #home-text {
+  max-width: 50em;
+  margin: 0 auto;
+}
+#home-content h3 {
+  margin: 2em 0 1em;
+  font-size: 2em;
+}
+#home-content p, #home-content li {
+  margin: 0.5em 0;
+  line-height: 1.5;
+}
+#home-content ul {
+  padding: 0 2em;
+}
+#home-content ul li {
+  list-style-type: circle;
+}
+
+.student-name {
+  position: relative;
+  height: 2.5em;
+}
+.student-name img {
+  position: absolute;
+  width: 1.5em;
+  display: none;
+  box-sizing: border-box;
+}
+.student-name img:nth-of-type(1) {
+  left: 25%;
+}
+.student-name img:nth-of-type(2) {
+  left: 67%;
+}
+.student-name img:hover {
+  cursor: pointer;
+}
+.student-name:hover img {
+  display: inline;
+}
+.student-name:hover img:hover {
+  border: 1px solid black;
+  border-radius: 0.2em;
+}
+.student-name:hover span {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
