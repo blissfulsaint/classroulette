@@ -7,7 +7,7 @@
     <!-- <script defer src="js/main.js" type="module"></script> -->
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/main.js" type="module"></script>
-    <script defer src="../js/register.js"></script>
+    <script defer src="../js/register.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -15,21 +15,24 @@
     <nav>
     </nav>
     <main>
-      <h2>Registration Form</h2>
-      <form id="registrationForm" onsubmit="register(); return false;">
-        <label for="first name">First Name:</label>
-        <input type="text" id="first_name" name="fname" required>
-        
-        <label for="last name">Last Name:</label>
-        <input type="text" id="last_name" name="lname" required>
+      <form id="registrationForm">
+        <fieldset>
+          <legend>Create a New Account</legend>
+          <label for="first name">First Name</label>
+          <input type="text" id="first_name" name="fname" required>
+          
+          <label for="last name">Last Name</label>
+          <input type="text" id="last_name" name="lname" required>
 
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-        <button type="submit">Sign up</button>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          
+          <button type="submit">Sign up</button>
+          <a href="login.html" class="page_link">Already have an account? Login here!</a>
+        </fieldset>
       </form>
     </main>
     <footer>

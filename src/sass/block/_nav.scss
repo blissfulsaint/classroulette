@@ -4,6 +4,12 @@ nav
     background-color: $secondary-color;
     width: auto;
     overflow: auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    box-shadow: 0 .3em 1em .1em rgba(0, 0, 0, 0.686);
+
     ul
     {
         display: flex;
