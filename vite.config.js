@@ -12,7 +12,7 @@ export default defineConfig({
         user: resolve(__dirname, 'src/user/index.html'),
         login: resolve(__dirname, 'src/user/login.html'),
         register: resolve(__dirname, 'src/user/register.html'),
-        prayerselector: resolve(__dirname, 'src/user/prayerselector.html'),
+        prayerselector: resolve(__dirname, 'src/user/classroulette.html'),
       },
     },
   },
