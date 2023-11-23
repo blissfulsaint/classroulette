@@ -99,7 +99,16 @@ async function fetchClassData() {
                     const selectBtn = '<button id="select-student-button">Select Student</button>';
                     element.insertAdjacentHTML('beforeend', selectBtn);
 
-                    const modal = '<div id="modal"><div class="modal-content"><span class="close" id="closeModalBtn">&times;</span><img class="modalimage" alt="Student Profile Picture"><span class="modalfname">Test</span><span class="modallname">testing</span></div></div>';
+                    const modal = `<div id="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModalBtn">&times;</span>
+                            <img class="modalimage" alt="Student Profile Picture">
+                            <div class="name-container">
+                                <span class="modalfname">[First Name Not Found]</span>
+                                <span class="modallname">[Last Name Not Found]</span>
+                            </div>
+                        </div>
+                    </div>`;
                     element.insertAdjacentHTML('beforeend', modal);
                     const closeModalBtn = document.getElementById('closeModalBtn');
                     closeModalBtn.addEventListener('click', closeModal);
