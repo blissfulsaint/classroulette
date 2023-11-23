@@ -86,6 +86,11 @@ async function fetchClassData() {
                     const selectBtn = '<button id="select-student-button">Select Student</button>';
                     element.insertAdjacentHTML('beforeend', selectBtn);
 
+                    const modal = '<div id="modal"><div class="modal-content"><span class="close" id="closeModalBtn">&times;</span><img class="modalimage" alt="Student Profile Picture"><span class="modalfname">Test</span><span class="modallname">testing</span></div></div>';
+                    element.insertAdjacentHTML('beforeend', modal);
+                    const closeModalBtn = document.getElementById('closeModalBtn');
+                    closeModalBtn.addEventListener('click', closeModal);
+
                     // reference button from html
                     const selectStudentButton = document.getElementById('select-student-button');
   
@@ -149,19 +154,36 @@ function cubicEase(t) {
 }
 
 // function to loop randomStudent selection
-function onButtonClick() {
-    // loop the function 20 times
+// function onButtonClick() {
+//     // loop the function 20 times
+//     for (let i = 0; i < 20; i++) {
+//         // change i to a number between 0 and 1
+//         let t = i / 19;
+//         // scale t however much is desired
+//         let scaledT = t * 5;
+//         const delay = cubicEase(scaledT);
+//         // delay the function call by "delay" every iteration
+//         setTimeout(function() {
+//             randomStudent();
+//         }, delay);
+//     }
+//     loadModal();
+// }
+async function onButtonClick() {
     for (let i = 0; i < 20; i++) {
-        // change i to a number between 0 and 1
         let t = i / 19;
-        // scale t however much is desired
-        let scaledT = t * 50;
+        let scaledT = t * 25;
         const delay = cubicEase(scaledT);
-        // delay the function call by "delay" every iteration
-        setTimeout(function() {
-            randomStudent();
-        }, delay);
+ 
+        await new Promise(resolve => {
+            setTimeout(() => {
+                randomStudent();
+                resolve();
+            }, delay);
+        });
     }
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    loadModal();
 }
 
 let previousRandomIndex = -1;
@@ -194,4 +216,38 @@ function randomStudent() {
     // highlight random student chosen
     randomStudent.classList.add('highlighted');
 
+}
+
+function loadModal() {
+    var modal = document.getElementById('modal');
+    var fnameSpan = modal.querySelector('.modalfname');
+    var lnameSpan = modal.querySelector('.modallname');
+    var image = modal.querySelector('.modalimage');
+
+    var highlightedStudent = document.querySelector('.highlighted');
+
+    if (highlightedStudent) {
+        const base64String = highlightedStudent.dataset.profilepic;
+        var fname = highlightedStudent.querySelector('.first-name').textContent;
+        var lname = highlightedStudent.querySelector('.last-name').textContent;
+
+        image.src = base64String;
+        fnameSpan.textContent = fname;
+        lnameSpan.textContent = lname;
+    }
+
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    var modal = document.getElementById('modal');
+
+    modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById('modal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
 }
