@@ -83,6 +83,19 @@ async function fetchClassData() {
                         });
                     });
 
+                    const detailButtons = document.querySelectorAll('.details-btn');
+
+                    detailButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            console.log('button was clicked');
+                            const studentCard = button.closest('.student-name');
+
+                            if (studentCard) {
+                                loadModal(studentCard);
+                            }
+                        })
+                    })
+
                     const selectBtn = '<button id="select-student-button">Select Student</button>';
                     element.insertAdjacentHTML('beforeend', selectBtn);
 
@@ -218,18 +231,18 @@ function randomStudent() {
 
 }
 
-function loadModal() {
+function loadModal(student = document.querySelector('.highlighted')) {
     var modal = document.getElementById('modal');
     var fnameSpan = modal.querySelector('.modalfname');
     var lnameSpan = modal.querySelector('.modallname');
     var image = modal.querySelector('.modalimage');
 
-    var highlightedStudent = document.querySelector('.highlighted');
+    // var highlightedStudent = document.querySelector('.highlighted');
 
-    if (highlightedStudent) {
-        const base64String = highlightedStudent.dataset.profilepic;
-        var fname = highlightedStudent.querySelector('.first-name').textContent;
-        var lname = highlightedStudent.querySelector('.last-name').textContent;
+    if (student) {
+        const base64String = student.dataset.profilepic;
+        var fname = student.querySelector('.first-name').textContent;
+        var lname = student.querySelector('.last-name').textContent;
 
         image.src = base64String;
         fnameSpan.textContent = fname;
