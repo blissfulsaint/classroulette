@@ -2,24 +2,31 @@
 #modal {
     display: none; /* Hidden by default */
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
   
     .modal-content {
       background-color: $secondary-color;
-      margin: 15% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1em;
+      max-width: 20em;
+      width: 100%; /* Adjust width as needed */
+
+      border-radius: 2em;
+      box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.464);
   
       .close {
+        position: absolute;
+        right: 10%;
         color: $primary-color;
-        float: right;
         font-size: 28px;
         font-weight: bold;
   
@@ -30,11 +37,27 @@
           cursor: pointer;
         }
       }
-  
-      .fname,
-      .lname {
+
+      img {
+        width: 10em;
         display: block;
+        margin: 0 auto;
+        box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.464);
+        border-radius: 1em;
+      }
+
+      div {
+        margin: 1em auto;
+        width: fit-content;
+        text-align: center;
+      }
+  
+      .modalfname,
+      .modallname {
+        display: inline;
         margin-bottom: 10px;
+        color: black;
+        font-size: 1.5em;
       }
     }
   }
