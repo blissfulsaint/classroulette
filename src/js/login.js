@@ -1,7 +1,7 @@
 // script.js
 
-const apiUrl = 'https://classrouletteapi.onrender.com';
-// const apiUrl = 'http://localhost:3000';
+// const apiUrl = 'https://classrouletteapi.onrender.com';
+const apiUrl = 'http://localhost:3000';
 
 // Function to check if the user is logged in
 function checkLoginStatus() {

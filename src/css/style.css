@@ -393,4 +393,39 @@ body .logo-link .logo {
   display: none;
 }
 
+#modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+}
+#modal .modal-content {
+  background-color: #9CC5A1;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+#modal .modal-content .close {
+  color: #49A078;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#modal .modal-content .close:hover, #modal .modal-content .close:focus {
+  color: #49A078;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modal .modal-content .fname,
+#modal .modal-content .lname {
+  display: block;
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
