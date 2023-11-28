@@ -1,24 +1,23 @@
-# cse310team
+# CSE310 Team
 # Overview
 
-This is a project completed by a team of engineers. The idea is that professors can use this software in order to be able to randomly select a student for prayer. Through creating this project, we hope to explore tools that are available to us as well as learn new languages.
-
-Coming Soon!
-[Software Demo Video](http://youtube.link.goes.here)
+This is a project completed by a team of engineers. Through creating this project, we hope to explore tools that are available to us as well as learn new languages. Professors can use this software in order to be able to randomly select a student for various reasons, such as saying a prayer or answering a question. When they go to the website, professors can add a class and its students, then press the "Select Student" button to have the program randomly select a student from the list. 
 
 # Development Environment
 
-This software will be using SASS (compiled into CSS), HTML, and Javascript. We will then be using Netlify to host this website to increase accesibility.
+This frontend software will be using SASS (compiled into CSS), HTML, and Javascript. We will then be using Netlify to host this website to increase accesibility.
+
+# Collaborators
+
+Brandon Lisonbee, Jaelee Jeong, Jacob Holst, Jeremiah Franco, Kaleb Bradford, Tyler Wright, Matt McGrath
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
+- [Chat GPT](https://chat.openai.com/)
 - [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
-- Item 1
-- Item 2
-- Item 3
+- Something to add in the future would be having the program display confetti after a student is chosen.
+- We could also allow users to change the color theme with options, such as dark and light mode.
+- In the future, there could be an input area to allow professors to input the number of students they want to select. 
