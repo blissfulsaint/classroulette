@@ -17,7 +17,8 @@ Brandon Lisonbee, Jaelee Jeong, Jacob Holst, Jeremiah Franco, Kaleb Bradford, Ty
 # Useful Websites
 
 - [Chat GPT](https://chat.openai.com/)
-- [Web Site Name](http://url.link.goes.here)
+- [The JS Call Stack Explained In 9 Minutes](https://www.youtube.com/watch?v=W8AeMrVtFLY)
+- [Sass Basics](https://sass-lang.com/guide/)
 
 # Future Work
 
