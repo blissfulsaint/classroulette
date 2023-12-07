@@ -7,7 +7,7 @@
     <!-- <script defer src="js/main.js" type="module"></script> -->
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/main.js" type="module"></script>
-    <script defer src="../js/registerclass.js"></script>
+    <script defer src="../js/registerclass.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -15,24 +15,26 @@
     <nav>
     </nav>
     <main>
-      <h2>Class Registration Form</h2>
-      <form id="registrationForm" onsubmit="register(); return false;">
-        <label for="department">Department:</label>
-        <input type="text" id="department" name="department" required><br>
-    
-        <label for="code">Course Code:</label>
-        <input type="text" id="course_code" name="code" required><br>
-    
-        <label for="name">Course Name:</label>
-        <input type="text" id="name" name="name" required><br>
-    
-        <label for="section">Section:</label>
-        <input type="text" id="section" name="section" required><br>
-    
-        <label for="capacity">Class Capacity:</label>
-        <input type="text" id="capacity" name="capacity" required><br>
-    
-        <button type="submit">Create Class</button>
+      <form id="addClassForm">
+        <fieldset>
+          <legend>Add a new Class</legend>
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required><br>
+      
+          <label for="code">Course Code:</label>
+          <input type="text" id="course_code" name="code" required><br>
+      
+          <label for="name">Course Name:</label>
+          <input type="text" id="name" name="name" required><br>
+      
+          <label for="section">Section:</label>
+          <input type="text" id="section" name="section" required><br>
+      
+          <label for="capacity">Class Capacity:</label>
+          <input type="text" id="capacity" name="capacity" required><br>
+      
+          <button type="submit">Create Class</button>
+        </fieldset>
     </form>
     </main>
     <footer>

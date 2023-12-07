@@ -5,7 +5,9 @@ const apiUrl = 'https://prayerselectorapi.onrender.com';
 
 
 // register function
-async function register() {
+async function addClass(event) {
+    event.preventDefault();
+
     const departmentInput = document.getElementById('department');
     const codeInput = document.getElementById('course_code');
     const nameInput = document.getElementById('name');
@@ -31,8 +33,8 @@ async function register() {
         
         window.location.href = '/user/classregistration.html';
     } else {
-        alert('Registration failed. Please check that all fields are filled out correctly.');
+        alert('Class addition failed. Please check that all fields are filled out correctly.');
     }
 }
 
-  
+document.getElementById('addClassForm').addEventListener('submit', addClass);
