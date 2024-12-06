@@ -5,6 +5,8 @@ This is a project completed by a team of engineers. Through creating this projec
 
 View our [Software Demo Video](https://youtu.be/V8ApSF1IoQU) to see it in action or check out the [webapp hosted on Netlify](https://classroulette.netlify.app/)
 
+Also be sure to take a look at our [backend repo](https://github.com/blissfulsaint/cse310team-BACKEND)
+
 ## Development Environment
 
 This frontend software will be using SASS (compiled into CSS), HTML, and Javascript. We will then be using Netlify to host this website to increase accesibility.
