@@ -5,7 +5,7 @@ This is a project completed by a team of engineers. Through creating this projec
 
 View our [Software Demo Video](https://youtu.be/V8ApSF1IoQU) to see it in action or check out the [webapp hosted on Netlify](https://classroulette.netlify.app/)
 
-Also be sure to take a look at our [backend repo](https://github.com/blissfulsaint/cse310team-BACKEND)
+Also be sure to take a look at our [backend repo](https://github.com/blissfulsaint/classroulette-BACKEND)
 
 ## Development Environment
 
